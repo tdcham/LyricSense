@@ -77,7 +77,7 @@ function addContext() {
     <?php foreach ($all_moods as $mood): ?>
         <?php $isSuggested = in_array($mood["mood_name"], $suggested_moods); ?>
 
-        <label style="<?= $isSuggested ? 'font-style: italic;' : '' ?>">
+        <label style="<?= $isSuggested ? 'color: blue; font-weight: bold;' : '' ?>">
             <input type="checkbox"
                 name="moods[]"
                 value="<?= htmlspecialchars($mood["mood_name"]) ?>">
@@ -91,7 +91,7 @@ function addContext() {
     <?php foreach ($all_contexts as $context): ?>
         <?php $isSuggested = in_array($context["context_name"], $suggested_contexts); ?>
 
-        <label style="<?= $isSuggested ? 'font-style: italic;' : '' ?>">
+        <label style="<?= $isSuggested ? 'color: blue; font-weight: bold;' : '' ?>">
             <input type="checkbox"
                 name="contexts[]"
                 value="<?= htmlspecialchars($context["context_name"]) ?>">
