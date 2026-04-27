@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS visitors (
+    visitor_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    department VARCHAR(100) NOT NULL,
+    visit_date DATE NOT NULL
+);
